@@ -69,7 +69,7 @@ $s-device: 480px;
 // Classes de offset
 @for $i from 1 through $cols {
   .offset-#{$i} {
-    width: grid($i, offset);
+    margin-left: grid($i, offset);
     @extend %offset;
   }
 }
