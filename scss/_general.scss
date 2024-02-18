@@ -33,3 +33,24 @@ p {
     }
   }
 }
+
+footer {
+  padding: 20px 0;
+  background: $neutral;
+  @include box-shadow(0 0 0 10px $neutral);
+  p {
+    display: inline-block;
+    padding-top: 5px;
+    color: $background-1;
+    @include device(small) {
+      text-align: center;
+    }
+  }
+  a img {
+    float: right;
+    @include device(small) {
+      float: none;
+      margin: 20px auto;
+    }
+  }
+}
