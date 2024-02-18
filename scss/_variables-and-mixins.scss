@@ -1,0 +1,33 @@
+// Cores
+$background-1: #edece4;
+$background-2: #cbc6b9;
+$background-3: #988c77;
+$text: #2a2426;
+$green: #988c77;
+
+// Fontes
+$font-1: "PT Mono", monospace;
+$font-2: "Aref Ruqaa", serif;
+
+@function rem($pixel, $context: 16) {
+  @return $pixel / $context + "rem";
+}
+
+@mixin type-1($size) {
+  font-family: $font-1;
+  @if $size == 18 {
+    font-size: rem(18);
+    line-height: rem(30, 18);
+  }
+}
+
+@mixin type-2($size) {
+  font-family: $font-2;
+  @if $size == 18 {
+    font-size: rem(18);
+    line-height: rem(30, 18);
+  } @else if $size == 24 {
+    font-size: rem(24);
+    line-height: rem(30, 24);
+  }
+}

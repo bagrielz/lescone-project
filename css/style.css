@@ -220,3 +220,49 @@ table {
   display: table;
   clear: both;
 }
+
+body {
+  background: #edece4;
+  border: 10px solid #cbc6b9;
+  color: #2a2426;
+}
+
+@media screen and (max-width: 479px) {
+  body {
+    border: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  font-family: "PT Mono", monospace;
+  font-size: "1.125rem";
+  line-height: "1.66667rem";
+}
+
+.title {
+  font-family: "PT Mono", monospace;
+  font-size: "1.125rem";
+  line-height: "1.66667rem";
+  text-transform: uppercase;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 70%;
+  margin-top: 7px;
+  float: right;
+  height: 2px;
+  background: #2a2426;
+}
+
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .title::after {
+    width: 60%;
+  }
+}

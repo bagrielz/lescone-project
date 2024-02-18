@@ -1,0 +1,35 @@
+body {
+  background: $background-1;
+  border: 10px solid $background-2;
+  color: $text;
+  @include device(small) {
+    border: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  @include type-1(18);
+}
+
+.title {
+  @include type-1(18);
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    display: block;
+    width: 70%;
+    margin-top: 7px;
+
+    float: right;
+    height: 2px;
+    background: $text;
+    @include device(medium) {
+      width: 60%;
+    }
+  }
+}
