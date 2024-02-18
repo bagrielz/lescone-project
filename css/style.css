@@ -341,3 +341,70 @@ p {
   border: 10px solid #cbc6b9;
   width: 100%;
 }
+
+.menu {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 479px) {
+  .menu {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.menu-item {
+  margin-bottom: 120px;
+}
+
+.menu-item h2 {
+  font-family: "PT Mono", monospace;
+  padding-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-item li {
+  font-family: "PT Mono", monospace;
+  font-size: "1.125rem";
+  line-height: "1.66667rem";
+  line-height: "1.94444rem";
+}
+
+.menu-item li span {
+  font-family: "Aref Ruqaa", serif;
+  color: #2a2426;
+  display: inline-block;
+  width: 70px;
+  margin-right: 10px;
+  text-align: right;
+  margin-left: -80px;
+}
+
+@media screen and (max-width: 479px) {
+  .menu-item li span {
+    margin-left: 0px;
+    width: auto;
+  }
+}
+
+.menu-item img {
+  border-radius: 50%;
+  border: 10px solid #cbc6b9;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-item img {
+    right: 200px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .menu-item img {
+    margin-top: 40px;
+    right: 10px;
+    width: 140px;
+  }
+}
