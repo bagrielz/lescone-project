@@ -1,7 +1,7 @@
 body {
   background: $background-1;
   border: 10px solid $background-2;
-  color: $text;
+  color: $neutral;
   @include device(small) {
     border: none;
   }
@@ -27,7 +27,7 @@ p {
 
     float: right;
     height: 2px;
-    background: $text;
+    background: $neutral;
     @include device(medium) {
       width: 60%;
     }

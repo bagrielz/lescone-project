@@ -1,0 +1,61 @@
+.intro {
+  margin-top: 60px;
+  @include device(small) {
+    margin-top: 20px;
+  }
+}
+
+.logo {
+  margin-bottom: 60px;
+}
+
+.intro-info {
+  border-right: 2px solid $neutral;
+  max-width: 320px;
+  p {
+    padding-top: 10px;
+    &:first-child {
+      border-bottom: 2px solid $neutral;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.intro-telephone {
+  color: $background-3;
+  @include device(small) {
+    margin-bottom: 40px;
+  }
+  &::after {
+    content: "/ / / /";
+    display: block;
+    margin-top: 200px;
+    font-size: 220px;
+
+    letter-spacing: -90px;
+    color: $neutral;
+    @include device(medium) {
+      margin-top: 80px;
+      font-size: 160px;
+      letter-spacing: -70px;
+    }
+    @include device(small) {
+      display: none;
+    }
+  }
+}
+
+.open {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+
+  background: $green;
+  border-radius: 50%;
+  margin-left: 24px;
+}
+
+.intro-photo {
+  border: 10px solid $background-2;
+  width: 100%;
+}
